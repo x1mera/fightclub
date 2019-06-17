@@ -1,0 +1,466 @@
+body{
+
+	box-sizing:border-box;
+	min-width:303px; 
+	margin:0px;
+	background:url(mma.jpg);
+	background-size:cover;
+	font-family:arial;
+	background-attachment:fixed;
+	}
+
+/* Стили Header */
+.spartan{
+	float:left; 
+	height:110px; 
+	width:110px;
+	}
+.spartan img {
+	width:100%
+	}
+header, .telooo, footer {
+	position:relative;
+	border-right:1px solid gray;
+	border-left:1px solid gray;
+	max-width:1280px; 
+	margin:auto; 
+	background-color:#100D12
+	}
+header {
+	margin-bottom:20px;
+	margin-top:0px;
+	}
+.emblem{
+	float:left;
+	text-shadow:1px -4px silver, 0px 0px 70px white;
+	margin: 0px 10px 10px 10px;
+	width:550px; 
+	height:80px;
+	font-family: 'Eater', cursive;
+	font-size:55px;
+	}
+.emblem span{
+	text-shadow:0px 0px 10px white;
+	font-size:30px;
+	color: lightgray;
+	}
+p.contakt { 
+	float:right;
+	margin-top:20px;
+	margin-right:20px;
+	color:white;
+	font-size:14px;
+	}
+.red{
+	color:red;
+	}
+header ul{
+	margin-top:5px;
+	box-sizing:border-box;
+	width:100%;
+	border:2px solid black;
+	border-radius:8px;
+	padding-left:0px;
+	background: linear-gradient(gray 0%,black 20%,black 50%, silver 100%)
+	}
+header li {
+	display:inline-block;
+	}
+li a{
+	display:inline-block;
+	text-decoration:none;
+	padding:8px 30px;
+	font-size:20px;
+	font-weight:600;
+	color:white;
+	border-right:2px solid gray;
+	}
+header li:first-of-type {
+	border-left:2px solid gray;
+	margin-left:8%;
+	}
+header a:hover{
+	color:red;
+	padding-bottom:5px;
+	border-bottom:3px solid red;
+	box-sizing:padding-box;
+	}
+header a:active{
+	padding-bottom:8px;
+	box-shadow: 0px 0px 4px 7px #000000 inset;
+	font-size:20px;
+	border-bottom:0px;
+	font-size:18px;
+	}
+a.active{
+	color:red;
+	padding-bottom:5px;
+	border-bottom:3px solid red;
+	box-sizing:padding-box;
+	}
+.clear{
+	clear:both;
+	}
+/* Конец стилей Header */
+
+
+
+/* */
+.td_block{
+	position:absolute;
+	width:400px;
+	left:-30px;
+	top:-20px;
+	border-radius:25px;
+	opacity:1;
+	height:300px;
+	background-color:rgba(255, 255, 255,0.8);
+	z-index:2;
+	transition-property:opacity;
+	transition-duration:1.5s;
+	}
+.telooo{
+	background-color:lightgray;
+	}
+.telooo .golova {
+	width:100%;
+	height:150px;
+	position:relative;
+	overflow:hidden;
+	border-top:3px solid gray;
+	}
+.telooo .golova img {
+	position: absolute; 
+	top:-100px; 
+	width:100%;
+	}
+.telooo .golova p {
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -100%);
+	position:absolute;
+	font-size:25px;
+	z-index:2;
+	color:red;
+	text-align:center;
+	}
+table {
+	font-size:18px;
+	border-spacing:25px 10px;
+	margin:10px auto;
+	padding-bottom:10px;
+	border:0.001px solid green;
+	border-radius:15px;
+	box-shadow:inset 0 0 0 0 green, 0 0 0 lightgreen; 
+	transition:box-shadow 0.8s;
+	}
+table:hover{
+	box-shadow: inset 0 0 0 2px green, 0 0 20px 6px white;
+	}
+table:hover .td_block{
+	opacity:0;
+	}
+.border {
+	background: url(DPS-82.jpg);
+	padding-top:20px;
+	padding-bottom:20px;
+	}
+table.price {
+	font-size:18px;
+	}
+table.price td {
+	padding:8px 10px;
+	}
+.telooo table td.table_head {
+	text-align:center;
+	background-color:rgba(0,0,0,0.6);
+	color:red; 
+	border: 1px solid black;
+	}
+table td {
+	position:relative;
+	overflow:hidden;
+	border-radius:25px;
+	padding:10px 50px; 
+	text-align:center;
+	background-color:rgba(237, 237, 237,0.8);
+	border: 1px solid black;
+	box-shadow:inset 0 0 0 0 green, 0 0 0 lightgreen;
+	transition:box-shadow 0.8s;
+	}
+table:hover td{
+	box-shadow: inset 0 0 0 0px white, 0 0 3px 0.5px black;
+	}
+table td:first-of-type {
+	text-align:left;
+	}
+.tabless_2 {
+	text-align:center;
+	display:none;
+	}
+.tabless_2 div {
+	background-color:rgba(0,0,0,0.4);
+	border-radius:10px;
+	padding-bottom:5px;
+	}
+.tabless_2 div p {
+	padding:7px 0px; 
+	background-color:#ededed;
+	border-radius:10px;
+	box-shadow:0px 3px black;
+	}
+.tabless_2 div p.table_head {
+	background-color:rgba(0,0,0,0.5);
+	color:red; 
+	font-size:18px;
+	}
+.tabless_2 table {
+	border-spacing:5px 5px;
+	font-size:17.5px;
+	}
+.tabless_2 table td{
+	padding-right:25px;
+	padding-left:25px;
+	}
+
+/* */
+
+
+
+/* Стили Footer */
+footer {
+	background-color:black;
+	color:white;
+	font-size:10px;
+	}
+footer .copy {
+	margin:auto;
+	margin-top:30px;
+	max-width:90%;
+	height:80px;
+	}
+footer .copy p {
+	padding-top:20px;
+	}
+/* Конец стилей Footer */
+
+.to-top {
+		z-index:3;
+		display: none;
+		padding: 10px;
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		border-radius: 15px;
+		background: #fff;
+		border: 1px darkgray solid;
+		color: #000;
+		text-decoration: none;
+		opacity: .5;
+		transition:opacity 1s;
+	}
+
+	.to-top:hover {
+		background: white;
+		opacity: 1;
+	}
+	
+@media (max-width: 1000px) {
+	.head_centr {
+		width:550px;
+		margin:auto;
+		}
+	.spartan img {
+		float:left;
+		}
+	header .emblem {
+		font-size:35px;
+		display: table-cell;
+		width:auto; 
+		margin:auto;
+		}
+	header .contakt {
+		margin:0px;
+		float:none;
+		width:600px;
+		}
+	header .contakt .phone {
+		float:left;
+		}
+	header .contakt .no_phone {
+		float:left; 
+		padding-left:10px;
+		}
+	header ul {
+		text-align:center;
+		}
+	header  li:first-of-type {
+		margin-left:0%;
+		}
+	header  nav ul li a {
+		font-size:16px;
+		}
+	header  nav ul li a:active {
+		font-size:16px;
+		}
+	}
+
+@media (max-width: 800px) {
+	.head_centr {
+		width:550px;
+		margin:auto;
+		}
+	.spartan img {
+		float:left;
+		}
+	header .emblem {
+		font-size:35px;
+		display: table-cell;
+		width:auto;
+		margin:auto;
+		}
+	header .contakt {
+		margin:0px;
+		float:none;
+		width:600px;
+		}
+	header .contakt .phone {
+		float:left;
+		}
+	header .contakt .no_phone {
+		float:left;
+		padding-left:10px;
+		}
+	header ul {
+		text-align:center;
+		}
+	header  li:first-of-type {
+		margin-left:0%;
+		}
+	header  nav ul li a {
+		font-size:14px;
+		padding:7px 15px;
+		}
+	header  nav ul li a:active {
+		font-size:14px;
+		}
+	br.adapt {
+		display:none;
+		}
+	.tabless_1 {
+		display:none;
+		}
+	.tabless_2 {
+		display:block;
+		background: url(DPS-82.jpg);
+		border-radius:10px;
+		}
+	}
+@media (max-width: 680px) {
+	.telooo .golova img {
+		position: absolute;
+		top:0px; 
+		width:100%;
+		}
+	}
+@media (max-width: 580px) {
+	.spartan{
+		height:19vw;
+		width:19vw;
+		}
+	.contakt {
+		display:none;
+		}
+	header .head_centr {
+		width:auto;
+		}
+	header .emblem {
+		font-size:6vw;
+		display: table-cell;
+		height:auto;
+		}
+	header .emblem span{
+		font-size:5vw;
+		}
+	header nav ul li a {
+		font-size: 2.5vw;
+		padding: 7px 10px;
+		}
+	header nav ul li a:active {
+		font-size: 2.5vw;
+		}
+	}
+
+@media (max-width: 480px) {
+	header ul{
+		margin-top:5px; 
+		box-sizing:border-box;
+		width:100%;
+		border:2px solid black; 
+		border-radius:8px;
+		padding-left:0px;
+		background:#100D12;
+		}
+	header li {
+		display:block;
+		}
+	header nav ul li a{
+		display:inline-block;
+		text-decoration:none;
+		padding:0px;
+		font-size:3.5vw;
+		font-weight:200;
+		color:white;
+		border-right:none;
+		width:100%;
+		}
+	header li:first-of-type {
+		border-left:none;
+		margin-left:0%;
+		}
+	header a:hover{
+		color:red; 
+		padding-bottom:1px;
+		border-bottom:0px solid red;
+		}
+	header nav ul li a:active{
+		padding-bottom:2px;
+		box-shadow: 0px 0px 2px 3px #000000 inset;
+		font-size:3.5vw;
+		border-bottom:0px;
+		}
+	a.active{
+		color:red;
+		padding-bottom:1px;
+		border-bottom:0px solid red;
+		}
+	.tabless_2 div p.table_head {
+		font-size:16px;
+		}
+	}
+
+@media (max-width: 320px){
+	header nav ul li a{
+		font-size:14px;
+		}
+	header nav ul li a:active{
+		font-size:14px;
+		}
+	body{
+		min-width:303px;
+		-webkit-box-sizing:border-box;
+		}
+	header,.telooo, footer {
+		box-sizing:border-box;
+		}
+	header .emblem {
+		font-size:15px;
+		}
+	header .emblem span{
+		font-size:14px;
+		}
+	.spartan{
+		height:60px;
+		width:60px;
+		}
+	}

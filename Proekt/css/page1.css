@@ -1,0 +1,740 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icomoon/fonts/icomoon.eot?nygv1j');
+  src:  url('../icomoon/fonts/icomoon.eot?nygv1j#iefix') format('embedded-opentype'),
+    url('../icomoon/fonts/icomoon.ttf?nygv1j') format('truetype'),
+    url('../icomoon/fonts/icomoon.woff?nygv1j') format('woff'),
+    url('../icomoon/fonts/icomoon.svg?nygv1j#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+	  content: "\e900";
+	  color:red;
+	  padding-right:5px;
+	}
+.icon-lifebuoy:before {
+	  content: "\e941";
+	}
+.icon-stopwatch:before {
+	  content: "\e952";
+	}
+.icon-spoon-knife:before {
+	  content: "\e9a3";
+	}
+.icon-sun:before {
+	  content: "\e9d4";
+	}
+.icon-star-full:before {
+	  content: "\e9d9";
+	}
+.icon-smile:before {
+	  content: "\e9e1";
+	}
+.icon-point-up:before {
+	  content: "\ea03";
+	}
+.icon-dropbox:before {
+	  content: "\eaae";
+	}
+
+body{
+	margin:0px;
+	background:url(mma.jpg);
+	background-size:cover; 
+	font-family:Arial; 
+	background-attachment:fixed;
+	}
+
+/* Стили Header */
+.spartan{
+	float:left; 
+	height:110px; 
+	width:110px;
+	}
+.spartan img {
+	width:100%
+	}
+header, .telooo, footer {
+	position:relative;
+	border-right:1px solid gray;
+	border-left:1px solid gray;
+	max-width:1280px; 
+	margin:auto; 
+	background-color:#100D12
+	}
+header {
+	margin-bottom:20px;
+	margin-top:0px;
+	}
+.emblem{
+	float:left;
+	text-shadow:1px -4px silver, 0px 0px 70px white;
+	margin: 0px 10px 10px 10px;
+	width:550px; 
+	height:80px;
+	font-family: 'Eater', cursive;
+	font-size:55px;
+	}
+.emblem span{
+	text-shadow:0px 0px 10px white;
+	font-size:30px;
+	color: lightgray;
+	}
+p.contakt { 
+	float:right;
+	margin-top:20px;
+	margin-right:20px;
+	color:white;
+	font-size:14px;
+	}
+.red{
+	color:red;
+	}
+header ul{
+	margin-top:5px;
+	box-sizing:border-box;
+	width:100%;
+	border:2px solid black;
+	border-radius:8px;
+	padding-left:0px;
+	background: linear-gradient(gray 0%,black 20%,black 50%, silver 100%)
+	}
+header li {
+	display:inline-block;
+	}
+li a{
+	display:inline-block;
+	text-decoration:none;
+	padding:8px 30px;
+	font-size:20px;
+	font-weight:600;
+	color:white;
+	border-right:2px solid gray;
+	}
+header li:first-of-type {
+	border-left:2px solid gray;
+	margin-left:8%;
+	}
+header a:hover{
+	color:red;
+	padding-bottom:5px;
+	border-bottom:3px solid red;
+	box-sizing:padding-box;
+	}
+header a:active{
+	padding-bottom:8px;
+	box-shadow: 0px 0px 4px 7px #000000 inset;
+	font-size:20px;
+	border-bottom:0px;
+	font-size:18px;
+	}
+a.active{
+	color:red;
+	padding-bottom:5px;
+	border-bottom:3px solid red;
+	box-sizing:padding-box;
+	}
+.clear{
+	clear:both;
+	}
+/* Конец стилей Header */
+
+
+/* СТИЛИ СЛАЙДЕРА */
+
+
+/* Slideshow container */
+.slideshow_container {
+	width:100%;
+	max-height:500px;
+	overflow:hidden;
+	border-bottom:3px solid black;
+	border-top:3px solid gray;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  position: absolute;
+  cursor:pointer;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color:red;
+}
+
+/* СТИЛИ ТЕКСТА ВНУТРИ СЛАЙДЕРА*/
+.text {
+  display:table-cell;
+  background-color:rgba(0,0,0,0.6);
+  color:white;
+  border-top:2px solid red;
+  border-bottom:2px solid red;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom:50%;
+  left:50%;
+  transform:translatey(50%);
+  transform:translatex(-50%);
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* КОНЕЦ СТИЛЕЙ СЛАЙДЕРА */
+
+.telooo .new {
+	position:relative;
+	font-size:20px;
+	color:#797979;
+	margin-top:30px;
+	width:30%;
+	margin-right:4.66%;
+	height:200px;
+	float:left;
+	}
+.new img {
+	height:200px;
+	width:145px;
+	float:left;
+	}
+.telooo .new_3{
+	position:relative;
+	font-size:20px;
+	color:#797979;
+	margin-top:30px;
+	width:30%;
+	height:200px; 
+	float:left;
+	}
+.telooo .new_3 img {
+	height:200px;
+	width:90px;
+	float:left;
+	}
+
+.white {
+	color:white;
+	}
+.new p, .new_3 p {
+	margin:10px 10px 0px 150px;
+	}
+.telooo .clear {
+	clear:both;
+	border-bottom:2px solid silver;
+	}
+.telooo .welcome {
+	width:65%;
+	margin-top:30px;
+	margin-right:4.5%;
+	float:left;
+	}
+.welc_time {
+	background:url(dps-82.jpg);
+	}
+.welc_time p.wite{
+	text-align:center;
+	}
+.welcome p {
+	padding-left:10px;
+	font-size:20px;
+	color:black;
+	text-indent:40px;
+	}
+p.white {
+	text-align:center; 
+	color:white;
+	}
+.telooo .time {
+	width:30%;
+	margin-top:30px;
+	height:300px; 
+	float:left;
+	}
+.time h3 {
+	color:black;
+	font-size:20px;
+	text-align:center;
+	}
+.time p {
+	margin:10px; 
+	color: black;
+	}
+.telooo .block {
+	margin-top:30px; 
+	width:30%;
+	margin-right:4.66%;
+	float:left;
+	}
+.block .white {
+	font-size:20px;
+	padding-left:30px;
+	}
+.block ul {
+	padding-left:10px;
+	}
+.block ul li{
+	list-style:none;
+	color:silver;
+	font-size:16px;
+	padding-bottom:10px;
+	}
+.block li:before{
+	content:"●";
+	margin-right:5px;
+	color:red;
+	}
+.telooo .image{
+	margin-top:30px; 
+	width:30%;
+	height:235px;
+	float:left;
+	border:1px solid gray;
+	}
+.image  {
+	background: url(per4i.jpg);
+	background-size:cover;
+	}
+
+.plus {
+	height:400px;
+	font-size:20px;
+	background:url(dps-82.jpg);
+	display:flex;
+	flex-wrap:wrap;
+	}
+.plus p {
+	width:100%;
+	text-align:center;
+	font-size:25px;
+	}
+.plus span {
+	width:47%;
+	padding-left:2%;
+	padding-right:1%;
+	}
+.plus .icon_red{
+	color:red;
+	padding-right:5px;
+	font-size:30px;
+	width:40px;
+	animation: red_darkred 4s infinite;
+	}
+.tren h2, .tren h4 {
+	text-align:center;
+	color:white;
+	}
+.tren_1 {
+	float:left; 
+	width:45%;
+	padding-left:2.3%;
+	padding-right:2.3%;
+	}
+.tren_1 p {
+	color:lightgray;
+	}
+
+
+footer {
+	background-color:black;
+	color:white; 
+	font-size:10px;
+	}
+footer .copy {
+	margin:auto;
+	margin-top:30px;
+	max-width:90%;
+	height:80px;
+	}
+footer .copy p {
+	padding-top:20px;
+	}
+
+@keyframes red_darkred {
+	0%,100%{color:red;}
+	50%{color:darkred;}
+}
+
+.to-top {
+		z-index:3;
+		display: none;
+		padding: 10px;
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		border-radius: 15px;
+		background: #fff;
+		border: 1px darkgray solid;
+		color: #000;
+		text-decoration: none;
+		opacity: .5;
+		transition:opacity 1s;
+	}
+
+	.to-top:hover {
+		background: white;
+		opacity: 1;
+	}
+
+@media (max-width: 1000px) {
+.head_centr {
+	width:550px;
+	margin:auto;
+	}
+.spartan img {
+	float:left;
+	}
+header .emblem {
+	font-size:35px;
+	display: table-cell;
+	width:auto;
+	margin:auto;
+	}
+header .contakt {
+	margin:0px;
+	float:none; 
+	width:600px;
+	}
+header .contakt .phone {
+	float:left;
+	}
+header .contakt .no_phone {
+	float:left; 
+	padding-left:10px;
+	}
+header ul {
+	text-align:center;
+	}
+header  li:first-of-type {
+	margin-left:0%;
+	}
+header  nav ul li a {
+	font-size:16px;
+	}
+header a:active {
+	font-size:16px;
+	}
+.telooo .new,.telooo .new_3 {
+	height:auto;
+	}
+.telooo .new_3 img {
+	margin-left:30px;
+	}
+.telooo .new_3 p {
+	margin-left:130px;
+	}
+.telooo .block span {
+	display:block;
+	}
+}
+
+@media (max-width: 800px) {
+.head_centr {
+	width:550px;
+	margin:auto;
+	}
+.spartan img {
+	float:left;
+	}
+header .emblem {
+	font-size:35px;
+	display: table-cell;
+	width:auto; 
+	margin:auto;
+	}
+header .contakt {
+	margin:0px;
+	float:none;
+	width:600px;
+	}
+header .contakt .phone {
+	float:left;
+	}
+header .contakt .no_phone {
+	float:left; 
+	padding-left:10px;
+	}
+.text {
+	font-size:3vw;
+	}
+header ul {
+	text-align:center;
+	}
+header  li:first-of-type {
+	margin-left:0%;
+	}
+header  nav ul li a {
+	font-size:14px;
+	padding:7px 15px;
+	}
+header  nav ul li a:active {
+	font-size:14px;
+	}
+.telooo .new,.telooo .new_3 {
+	height:auto;
+	}
+.telooo .new_3 img {
+	margin-left:30px;
+	float:none;
+	}
+.telooo .new img {
+	float:none;
+	}
+.telooo .new_3 p, .telooo .new p {
+	float:none; 
+	display:block;
+	margin:auto;
+	}
+.telooo .block span {
+	display:block;
+	}
+.telooo .block {
+	width:42%;
+	margin-right:2.5%;
+	margin-left:5%;
+	}
+.telooo .image {
+	width:80%;
+	float:none; 
+	margin:5px auto;
+	}
+.clear_none {
+	clear:both;
+	}
+.plus {
+	height:auto;
+	}
+br.adapt {
+	display:none;
+	}
+}
+@media (max-width: 680px) {
+.time h3 {
+	font-size:17px;
+	}
+}
+@media (max-width: 580px) {
+.spartan{
+	height:19vw; 
+	width:19vw;
+	}
+.contakt {
+	display:none;
+	}
+header .head_centr {
+	width:auto;
+	}
+header .emblem {
+	font-size:6vw;
+	display: table-cell;
+	height:auto;
+	}
+header .emblem span{
+	font-size:5vw;
+	}
+header nav ul li a {
+	font-size: 2.5vw;
+	padding: 7px 10px;
+	}
+header nav ul li a:active {
+	font-size: 2.5vw;
+	}
+
+}
+@media (max-width: 480px) {
+header ul{
+	margin-top:5px;
+	box-sizing:border-box;
+	width:100%;
+	border:2px solid black;
+	border-radius:8px;
+	padding-left:0px;
+	background:#100D12;
+	}
+header li {
+	display:block;
+	}
+header nav ul li a{
+	display:inline-block;
+	text-decoration:none;
+	padding:0px;
+	font-size:3.5vw;
+	font-weight:200;
+	color:white;
+	border-right:none;
+	width:100%;
+	}
+header li:first-of-type {
+	border-left:none;
+	margin-left:0%;
+	}
+header a:hover{
+	color:red; 
+	padding-bottom:1px;
+	border-bottom:0px solid red;
+	}
+header nav ul li a:active{
+	padding-bottom:2px;
+	box-shadow: 0px 0px 2px 3px #000000 inset;
+	font-size:3.5vw;
+	border-bottom:0px;
+	}
+a.active1{
+	color:red; 
+	padding-bottom:1px;
+	border-bottom:0px solid red;
+	}
+
+.telooo .new_3, .telooo .new {
+	margin-right:1%;
+	margin-left:4%;
+	width:28%;
+	}
+.telooo .new_3 img, .telooo .new img {
+	display:none;
+	}
+.telooo .new_3 p, .telooo .new p {
+	font-size:4vw;
+	}
+.welc_time {
+	background:lightgray;
+	}
+.time {
+	display:none;
+	}
+.telooo .welcome {
+	width:90%; 
+	margin:30px 5%;
+	font-size:5vw; 
+	}
+.telooo .welcome p{
+	font-size:5vw;
+	}
+.telooo .plus {
+	font-size:4vw;
+	}
+.tren_1 {
+	width:90%;
+	padding-right:4%;
+	padding-left:4%;
+	}
+}
+
+@media (max-width: 380px) {
+.telooo .block {
+	width:90%; 
+	margin:30px 5% 0px 5%;
+	}
+.telooo .plus {
+	background:lightgray;
+	}
+.telooo .plus span {
+	width:90%; 
+	margin:5px auto;
+	}
+
+}
+@media (max-width: 320px){
+header nav ul li a{
+	font-size:14px;
+	}
+header nav ul li a:active{
+	font-size:14px;
+	}
+body{
+	min-width:303px;
+	box-sizing:border-box;
+	}
+header,.telooo, footer {
+	box-sizing:border-box;
+	}
+.telooo .welcome p{
+	font-size:15px;
+	}
+.telooo .plus {
+	font-size:15px;
+	}
+.text {
+	font-size: 13px;
+	}
+.telooo .new_3 p, .telooo .new p{
+	font-size:14px;
+	}
+header .emblem {
+	font-size:15px;
+	}
+header .emblem span{
+	font-size:14px;
+	}
+.spartan{
+	height:60px;
+	width:60px;
+	}
+}

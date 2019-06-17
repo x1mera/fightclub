@@ -1,0 +1,599 @@
+body{
+	
+	box-sizing:border-box;
+	min-width:303px; 
+	margin:0px;
+	background:url(mma.jpg);
+	background-size:cover;
+	font-family:arial;
+	background-attachment:fixed;
+	}
+
+/* Стили Header */
+.spartan{
+	float:left; 
+	height:110px; 
+	width:110px;
+	}
+.spartan img {
+	width:100%
+	}
+header, .telooo, footer {
+	position:relative;
+	border-right:1px solid gray;
+	border-left:1px solid gray;
+	max-width:1280px; 
+	margin:auto; 
+	background-color:#100D12
+	}
+header {
+	margin-bottom:20px;
+	margin-top:0px;
+	}
+.emblem{
+	float:left;
+	text-shadow:1px -4px silver, 0px 0px 70px white;
+	margin: 0px 10px 10px 10px;
+	width:550px; 
+	height:80px;
+	font-family: 'Eater', cursive;
+	font-size:55px;
+	}
+.emblem span{
+	text-shadow:0px 0px 10px white;
+	font-size:30px;
+	color: lightgray;
+	}
+p.contakt { 
+	float:right;
+	margin-top:20px;
+	margin-right:20px;
+	color:white;
+	font-size:14px;
+	}
+.red{
+	color:red;
+	}
+header ul{
+	margin-top:5px;
+	box-sizing:border-box;
+	width:100%;
+	border:2px solid black;
+	border-radius:8px;
+	padding-left:0px;
+	background: linear-gradient(gray 0%,black 20%,black 50%, silver 100%)
+	}
+header li {
+	display:inline-block;
+	}
+li a{
+	display:inline-block;
+	text-decoration:none;
+	padding:8px 30px;
+	font-size:20px;
+	font-weight:600;
+	color:white;
+	border-right:2px solid gray;
+	}
+header li:first-of-type {
+	border-left:2px solid gray;
+	margin-left:8%;
+	}
+header a:hover{
+	color:red;
+	padding-bottom:5px;
+	border-bottom:3px solid red;
+	box-sizing:padding-box;
+	}
+header a:active{
+	padding-bottom:8px;
+	box-shadow: 0px 0px 4px 7px #000000 inset;
+	font-size:20px;
+	border-bottom:0px;
+	font-size:18px;
+	}
+a.active{
+	color:red;
+	padding-bottom:5px;
+	border-bottom:3px solid red;
+	box-sizing:padding-box;
+	}
+.clear{
+	clear:both;
+	}
+/* Конец стилей Header */
+
+
+
+/* */
+.telooo {
+	background: url(DPS-82.jpg);
+	}
+.telooo .golova {
+	width:100%; 
+	height:150px;
+	position:relative;
+	overflow:hidden;
+	border-top:3px solid gray;
+	}
+.telooo .golova img {
+	position: absolute;
+	top:-150px;
+	width:100%;
+	}
+.telooo .golova p {
+	text-align:center;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -100%); 
+	position:absolute;
+	font-size:25px;
+	z-index:2; 
+	color:red;
+	}
+.about_us {
+	padding:15px;
+	background-color:#ededed;
+	}
+.about_us p.titl {
+	font-weight:bold; 
+	text-align:center;
+	}
+.about_us p {
+	text-indent:40px;
+	}
+.telooo .history {
+	float:left;
+	width:58%;
+	margin-right:4%;
+	}
+.telooo .history p.titl {
+	text-indent:40px;
+	font-weight:bold;
+	}
+.telooo .news {
+	float:left; 
+	width:35%;
+	margin-left:10px;
+	}
+.telooo .news p.titl {
+	text-align:center; 
+	font-weight:bold;
+	}
+.red {
+	margin:0px;
+	}
+.extend {
+	display:none;
+	}
+.point {
+	cursor:pointer;
+	}
+.news ul li {
+	list-style-type:none;
+	}
+.news ul li p {
+	margin-bottom:0px;
+	}
+.news p.competation {
+	text-align:center;
+	font-size:20px; 
+	text-shadow:2px 2px darkgray;
+	margin:30px 0px 10px;
+	}
+.partner {
+	display: flex;
+	-webkit-flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	-webkit-justify-content:center;
+	}
+.partner p {
+	width:100%;
+	text-align:center;
+	font-weight:bold;
+	}
+.partner p.titl_2 {
+	font-size:20px;
+	}
+.partner div {
+	overflow:hidden;
+	width:20%;
+	margin:1%;
+	}
+
+.partner div img{
+	width:100%;
+	animation: rotaty 7s infinite;
+	}
+.partner div img.img_2 {
+	animation-delay:0.2s;
+	}
+.partner div img.img_3 {
+	animation-delay:0.4s;
+	}
+.partner div img.img_4 {
+	animation-delay:0.6s;
+	}
+
+.partner div p {
+	display:none; 
+	transform:translateY(-100%);
+	opacity:0;
+	font-weight:normal; 
+	text-align:left;
+	}
+.partner div:hover p {
+	display:block;
+	transform:translateY(-100%);
+	animation: pulse 2s forwards;
+	}
+@keyframes pulse{
+	0% {
+	opacity:0;
+	transform:translateY(-200%);
+		}
+	50%{
+	opacity:1;
+		}
+	100%{
+	opacity:1;
+	transform:translateY(0%);
+		}
+	}
+@keyframes rotaty {
+	0%{
+	
+	transform:scale(1);
+		}
+	5%{
+	
+	transform:scale(0.9);
+		}
+	15%{
+	
+	transform:scale(1.1);
+		}
+	20%{
+	
+	transform:scale(1);
+		}
+	100%{
+	
+	transform:scale(1);
+		}	
+	}
+.d3{
+	perspective:2000px;
+	-ms-perspective:2000px;
+	position:relative;
+	}
+.d3 .arrow {
+	position:absolute;
+	bottom:-10px;
+	right:10px;
+	width:20px; 
+	height:20px;
+	background-image:url(../arrow.png);
+	background-size:contain;
+	}
+.d3:hover .rotate {
+	transform:rotatey(180deg);
+	-ms-transform:rotatey(180deg);
+	}
+.rotate{
+	border:1px solid black;
+	box-shadow:0 0 4px 1px pink;
+	position:relative;
+	-ms-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	transition:1s;
+	transition-delay:5s;
+	margin:5px 20px;
+	}
+.action {
+	-ms-transform:rotatey(180deg);
+	transform:rotatey(180deg);
+	position:absolute;
+	background:#DCDCDC;
+	width:100%;
+	height:100%;
+	padding:50px;
+	box-sizing:border-box;
+	backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	}
+.action {
+	text-align:center;
+	font-family:Helvetica;
+	font-size:24px;
+	line-height:30px; 
+	text-shadow:2px 2px white;
+	}
+.no-preserve3d .d3:hover .rotate {
+	transform:rotatey(0deg);
+	-ms-transform:rotatey(0deg);
+	}
+
+/* */
+
+
+
+/* Стили Footer */
+footer {
+	background-color:black;
+	color:white;
+	font-size:10px;
+	}
+footer .copy {
+	margin:auto; 
+	margin-top:30px;
+	max-width:90%;
+	height:80px;
+	}
+footer .copy p {
+	padding-top:20px;
+	}
+/* Конец стилей Footer */
+
+.to-top {
+		z-index:3;
+		display: none;
+		padding: 10px;
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		border-radius: 15px;
+		background: #fff;
+		border: 1px darkgray solid;
+		color: #000;
+		text-decoration: none;
+		opacity: .5;
+		transition:opacity 1s;
+	}
+
+	.to-top:hover {
+		background: white;
+		opacity: 1;
+	}
+@media (max-width: 1000px) {
+	.head_centr {
+		width:550px;
+		margin:auto;
+		}
+	.spartan img {
+		float:left;
+		}
+	header .emblem {
+		font-size:35px;
+		display: table-cell;
+		width:auto;
+		margin:auto;
+		}
+	header .contakt {
+		margin:0px;
+		float:none; 
+		width:600px;
+		}
+	header .contakt .phone {
+		float:left;
+		}
+	header .contakt .no_phone {
+		float:left;
+		padding-left:10px;
+		}
+	header ul {
+		text-align:center;
+		}
+	header  li:first-of-type {
+		margin-left:0%;
+		}
+	header  nav ul li a {
+		font-size:16px;
+		}
+	header  nav ul li a:active {
+		font-size:16px;
+		}
+	}
+
+@media (max-width: 800px) {
+	.head_centr {
+		width:550px;
+		margin:auto;
+		}
+	.spartan img {
+		float:left;
+		}
+	header .emblem {
+		font-size:35px;
+		display: table-cell;
+		width:auto; 
+		margin:auto;
+		}
+	header .contakt {
+		margin:0px;
+		float:none; 
+		width:600px;
+		}
+	header .contakt .phone {
+		float:left;
+		}
+	header .contakt .no_phone {
+		float:left; 
+		padding-left:10px;
+		}
+	header ul {
+		text-align:center;
+		}
+	header  li:first-of-type {
+		margin-left:0%;
+		}
+	header  nav ul li a {
+		font-size:14px;
+		padding:7px 15px;
+		}
+	header  nav ul li a:active {
+		font-size:14px;
+		}
+	br.adapt {
+		display:none;
+		}
+	.d3:hover .rotate {
+		transform:rotatey(0deg);
+		-ms-transform:rotatey(0deg);
+		}
+	}
+@media (max-width: 680px) {
+	.telooo .golova img {
+		position: absolute;
+		top:0px;
+		width:100%;
+		}
+	.partner div {
+		overflow:hidden;
+		width:45%;
+		margin:2%;
+		}
+	.telooo .history {
+		float:left; 
+		width:54%;
+		margin-right:4%;
+		}
+	.telooo .history, .telooo .news {
+		font-size:3vw;
+		}
+	}
+@media (max-width: 580px) {
+	.spartan{
+		height:19vw; 
+		width:19vw;
+		}
+	.contakt {
+		display:none;
+		}
+	header .head_centr {
+		width:auto;
+		}
+	header .emblem {
+		font-size:6vw;
+		display: table-cell;
+		height:auto;
+		}
+	header .emblem span{
+		font-size:5vw;
+		}
+	header nav ul li a {
+		font-size: 2.5vw;
+		padding: 7px 10px;
+		}
+	header nav ul li a:active {
+		font-size: 2.5vw;
+		}
+	}
+
+@media (max-width: 480px) {
+	header ul{ 
+		margin-top:5px;
+		box-sizing:border-box; 
+		width:100%;
+		border:2px solid black;
+		border-radius:8px; 
+		padding-left:0px;
+		background:#100D12;
+		}
+	header li {
+		display:block;
+		}
+	header nav ul li a{
+		display:inline-block;
+		text-decoration:none; 
+		padding:0px;
+		font-size:3.5vw;
+		font-weight:200;
+		color:white;
+		border-right:none;
+		width:100%;
+		}
+	header li:first-of-type {
+		border-left:none;
+		margin-left:0%;
+		}
+	header a:hover{
+		color:red; 
+		padding-bottom:1px;
+		border-bottom:0px solid red;
+		}
+	header nav ul li a:active{
+		padding-bottom:2px;
+		box-shadow: 0px 0px 2px 3px #000000 inset; 
+		font-size:3.5vw;
+		border-bottom:0px;
+		}
+	a.active{
+		color:red;
+		padding-bottom:1px;
+		border-bottom:0px solid red;
+		}
+	.telooo .history, .telooo .news {
+		font-size:4vw;
+		float:none;
+		width:90%;
+		margin:auto;
+		}
+	.telooo .history p.titl {
+		text-indent:0px;
+		text-align:center; 
+		font-size:4.5vw;
+		font-weight:bold;
+		}
+
+	}
+
+@media (max-width: 380px) {
+	.partner div {
+		overflow:hidden;
+		width:60%;
+		margin:2%;
+		}
+	.telooo .history, .telooo .news {
+		font-size:4.5vw;
+		float:none;
+		width:90%;
+		margin:auto;
+		}
+	.telooo .history p.titl {
+		text-indent:0px;
+		text-align:center;
+		font-size:5vw; 
+		font-weight:bold;
+		}
+	}
+@media (max-width: 320px){
+	header nav ul li a{
+		font-size:14px;
+		}
+	header nav ul li a:active{
+		font-size:14px;
+		}
+	body{
+		min-width:303px;
+		-webkit-box-sizing:border-box;
+		}
+	header,.telooo, footer {
+		box-sizing:border-box;
+		}
+	.telooo .welcome p{
+		font-size:15px;
+		}
+	.telooo .plus {
+		font-size:15px;
+		}
+	header .emblem {
+		font-size:15px;
+		}
+	header .emblem span{
+		font-size:14px;
+		}
+	.spartan{
+		height:60px; width:60px;
+		}
+	}

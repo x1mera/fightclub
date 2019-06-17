@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Eater&amp;subset=latin-ext" rel="stylesheet">
+<link rel="shortcut icon" href="sparnan1.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/page1.css">
+<title>Панкратион</title>
+
+</head>
+<body>
+	<a href="#" class="to-top">Наверх</a>
+	<header>
+		<div class="head_centr">
+		<div class="spartan"><img src="sparnan.png" alt="изображение спартанеца"></div>
+		<div class="emblem"><span>Клуб панкратиона</span> SPARTAN</div>
+		<div class="clear_none"></div>
+            <p class="contakt"><span class="phone"><span class="red">+375 29</span> 1234 121 123 МТС<br/> <span class="red">+375 29</span> 1234 121 123 Velcom</span><br class="adapt"/> <span class="no_phone">Пн-Сб с 9.00 до 20.00, вс: выходной<br /> г.Минск, ул.Лобанка д.94</span></p>
+		<div class="clear"></div>
+		</div>
+		<nav>
+			<ul>
+				<li><a class="active1"><span class="icon-home"></span>Главная</a></li><li><a href="Proekt_page2.html">О нас</a></li><li><a href="proekt_page3.html">Галлерея</a></li><li><a href="proekt_page4.html">Цены и расписание</a></li><li><a href="proekt_page5.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="telooo">
+		<div>
+			<div class="slideshow_container">
+
+				<div class="mySlides fade">
+				  <img src="slid_1.jpg" alt="первый слайд" style="width:100%">
+				  <div class="text">ВЗРОСЛЫЕ ГРУППЫ</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="slid_2.jpg" alt="второй слайд" style="width:100%">
+				  <div class="text">ЗАНЯТИЯ ДЛЯ ЖЕНЩИН</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="slid_3.jpg" alt="третий слайд" style="width:100%">
+				  <div class="text">ИНДИВИДУАЛЬНЫЕ ТРЕНИРОВКИ</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="slid_4.jpg" alt="четвёртый слайд" style="width:100%">
+				  <div class="text">ЛУЧШЕЕ ОБОРУДОВАНИЕ</div>
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				</div>
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				  <span class="dot" onclick="currentSlide(4)"></span> 
+				</div>
+
+				<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+			<div class="new">
+				<img src="images/11-8.gif" alt="изображение чёкнутого мужика">
+				<p>Система, применимая не только в условиях ринга, но и в <span class="white">реальном уличном бою</span></p>
+			</div>
+			<div class="new">
+				<img src="medal.png" alt="изображение медали">
+				<p><span class="white">Качественная подготовка</span> неоднократно доказанная призовыми местами наших спортсменов</p>
+				
+			</div>
+			<div class="new_3" alt="картинка сенсей">
+				<img src="Sensei.png">
+				<p><span class="white">Лучший тренерский состав</span> мастеров спорта различных боевых искусств</p>
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="welc_time">
+			<div class="welcome"><p class="wite">ДОБРО ПОЖАЛОВАТЬ К НАМ!</p><p>Панкратион – это прародитель смешанных единоборств, первый олимпийский вид спорта, о котором многие до недавнего времени даже не слышали. Панкратион произошел от египетской борьбы, вавилонского кулачного боя, критского бокса, греческого кулачного боя.</p><p>В наше время панкратион пережил второе рождение, однако новый вариант гораздо менее опасен своего предшественника. В боях ввели ограничения по времени, использование защиты, снижающий риск травматизма. Однако соперникам по-прежнему разрешено применять практически любые приемы с любого положения.</p></div>
+			<div class="time"> <h3>ПРИВЕТСТВУЕМ ТЕБЯ, НОВОБРАНЕЦ!</h3><p>Как нас найти: <br />8(029)-123-121-1234 МТС <br />8(029)-123-121-1234 Velcom <br /> звонить можно с 9.00 до 20.00<br /> зал находится по адресу:ул. Лобанка д.94</p></div>
+			<div class="clear"></div>
+		</div>
+		<div class="block"><span class="white"> Придя к нам вы приобретёте:</span>
+			<ul>
+				<li>Уверенность в себе</li>
+				<li>Повысите выносливость</li>
+				<li>Развитие физических качеств</li>
+				<li>Приобретете навыки самообороны</li>
+				<li>Тело станет красивым, уйдет лишний вес</li>
+				<li>Единоборство тренирует ответственность, дисциплину</li>
+			</ul>
+		</div>
+		<div class="block"><span class="white">Мы предлагаем:</span>
+			<ul>
+				<li>Удобный график работы</li>
+				<li>Удобное расположение</li>
+				<li>Парковка</li>
+				<li>Индивидуальный подход</li>
+				<li>100% безопасность тренировок</li>
+				<li>Экиперовку</li>
+			</ul>
+		</div>
+		<div class="clear_none"></div>
+		<div class="image"></div>
+		<div class="clear"></div>
+		<div class="plus">
+			<p>Как проходят наши тенировки:</p>
+			<span><span class="icon-sun icon_red"></span>ЗДОРОВО - комплексная забота о вашем здоровье</span>
+			<span><span class="icon-smile icon_red"></span>ВЕСЕЛО - мы превращаем тренировку в праздник</span>
+			<span><span class="icon-point-up icon_red"></span>ЭФФЕКТИВНО - специально разработанные тренировки</span>
+			<span><span class="icon-lifebuoy icon_red"></span>БЕЗОПАСНО - с учетом всех современных методик</span>
+			<span><span class="icon-stopwatch icon_red"></span>УДОБНО - удобное время занятий</span>
+			<span><span class="icon-star-full icon_red"></span>ИНДИВИДУАЛЬНО - тренер всегда рядом</span>
+			<span><span class="icon-spoon-knife icon_red"></span>ПИТАНИЕ - помощь в составлении плана питания</span>
+			<span><span class="icon-dropbox icon_red"></span>ПОДАРКИ - действует система скидок</span>
+		</div>
+		<div class="tren">
+			<h2>Наш тренерский состав:</h2>
+			<div class="tren_1">
+				<h4><a name="B_P_M"></a>Болоянгов Павел Михайлович</h4>
+				<p>Чемпион мира по панкратиону среди профессионалов по версиям PLP и WUFC (2006 г.)<br />
+				Занимается боевыми искусствами с 1982 года.<br />
+				Эксперт федеральных каналов в областях: единоборства, самозащита (был ведущим рубрики «Самооборона» Первого канала), воспитание детей, контроль веса, физическое совершенство.</p>
+			</div>
+			<div class="tren_1">
+				<h4><a name="E_A_B"></a>Елсуков Алексей Борисович</h4>
+				<p>Чемпион Челябинской области по ММА (2007 г.), по боевому самбо (2006 г.), по кикбоксингу (2009 г.), по боксу (2009 г.).<br />
+				Чемпион УрФО по боевому самбо и кикбоксингу. Призер УрФО по ММА. Призер чемпионата России по боевому самбо в 2008 году в г. Кстово.<br />
+				Победитель международного турнира по ММА в г. Орске.<br />
+				Занимается боксом с 1996 года. Выступал на различных турнирах и соревнованиях по боевым видам спорта – боксу, кикбоксингу, ММА, боевому самбо.</p>
+			</div>
+			<div class="tren_1">
+				<h4><a name="F_N_A"></a>Фомин Николай Анатольевич</h4>
+				<p>Мастер спорта по армейскому рукопашному бою (2002 г.) и панкратиону (2003 г.).<br />
+				Чемпион России по рукопашному бою (2004-2010 гг.) и панкратиону (2004-2009 гг.), победитель первенства мира по панкратиону (1998 г.), победитель рейтинговых поединков по боям без правил (MMA, 1997-2007 гг.).<br />
+				Неоднократный чемпион и призер Москвы по рукопашному бою и панкратиону, чемпион Москвы по дзюдо и кикбоксингу, капитан сборной Москвы по рукопашному бою.</p>
+			</div>
+			<div class="tren_1">
+				<h4><a name="S_N_N"></a>Сизененко Никита Николаевич</h4>
+				<p>Мастер спорта по рукопашному бою (2007 г.).<br />
+				9-кратный чемпион России по рукопашному бою (2003-2011 гг.).<br />
+				Занимается рукопашным боем с 1994 года.</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+	</div>
+	
+	<footer>
+		<div class="copy"><p>&copy; На правах рекламы Минск 2018 <br /> Свидетельство о государственной регистрации выдано Минским горисполкомом от 21 июня 2018.<br/> Юридический адрес: РБ, г. Минск ул. Лобанка, 33 </p></div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script>
+		jQuery(function($) {			
+			var $toTop   = $('.to-top');
+			var body     = $('html, body');
+			
+			$(window).scroll(function(){
+
+					
+				if($(window).scrollTop()>1000){
+					$toTop.fadeIn(800);
+				}
+				else if ($(window).scrollTop()<1000){
+					$toTop.hide();
+				}
+			});
+			
+			$toTop.on('click', function(event) {
+				event.preventDefault();
+				body.animate({scrollTop:0}, 400);
+			});
+
+			});
+	</script>
+</body>
+</html>

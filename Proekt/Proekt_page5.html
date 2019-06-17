@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Caveat:400,700&amp;subset=cyrillic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Eater&amp;subset=latin-ext" rel="stylesheet">
+<link rel="shortcut icon" href="sparnan1.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/page5.css">
+<title>Контакты</title>
+
+</head>
+<body>
+	<a href="#" class="to-top">Наверх</a>
+	<header>
+		<div class="head_centr">
+		<div class="spartan"><img src="sparnan.png" alt="изображение спартанца"></div>
+		<div class="emblem"><span>Клуб панкратиона</span> SPARTAN</div>
+            <p class="contakt"><span class="phone"><span class="red">+375 29</span> 1234 121 123 МТС<br/> <span class="red">+375 29</span> 1234 121 123 Velcom</span><br class="adapt"/> <span class="no_phone">Пн-Сб с 9.00 до 20.00, вс: выходной<br /> г.Минск, ул.Лобанка д.94</span></p>
+		<div class="clear"></div>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Главная</a></li><li><a href="proekt_page2.html">О нас</a></li><li><a href="proekt_page3.html">Галлерея</a></li><li><a href="proekt_page4.html">Цены и расписание</a></li><li><a class="active">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="telooo">
+		<div class="golova"><img src="slid_4.jpg"  alt="изображение четвёртого слайда"><p>Наши контакты</p></div>
+		<div class="cont">
+			<h2>Контакты</h2>
+			<h4>Клуб панкратиона в Минске</h4>
+			<p><span class="bold">Адрес клуба:</span>Минск, ул.Лобанка,д.94</p>
+			<p><span class="bold">Телефон:</span>+375 29 1234 121 123 МТС</p>
+			<p><span class="bold">E-mail:</span>nickandJohn@mail.ru</p>
+			<p><span class="bold">График работы</span>:</p>
+			<p>Понедельник — Пятница с 7:30 до 21:30<br />Суббота с 7:30 до 16:00<br />Воскресенье с 7:30 до 16:00.</p>
+		</div>
+		<form>
+			<legend>Свяжитесь с нами</legend>
+			<label>ИМЯ:<br />
+				<input type="text" name="nam" placeholder="Иван" required>
+			</label><br />
+		
+			<label>E-MAIL:<br />
+				<input type="email" name="mail" placeholder="Tryl9l9@mail.ru" required>
+			</label><br />
+		
+			<label>ТЕМА:<br />
+				<input type="text" name="tema" placeholder="Введите тему сообщения">
+			</label><br />
+		
+			<label>СООБЩЕНИЕ:<br />
+				<textarea name="tema" placeholder="Введите текст" required></textarea>
+			</label><br />
+			<input type="submit" value="Отправить">
+		</form>
+		<div class="fram"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.4999484785812!2d27.428358121523726!3d53.88612932702562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbdae14b14f6dd%3A0xbd2767cf5bce7f13!2sMaximus!5e0!3m2!1sru!2sby!4v1531835195959" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+	</div>
+	
+	<footer>
+		<div class="copy"><p>&copy; На правах рекламы Минск 2018 <br /> Свидетельство о государственной регистрации выдано Минским горисполкомом от 21 июня 2018.<br/>Юридический адрес: РБ, г. Минск ул. Лобанка, 33 </p></div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script>
+		jQuery(function($) {			
+			var $toTop   = $('.to-top');
+			var body     = $('html, body');
+			
+			$(window).scroll(function(){
+
+					
+				if($(window).scrollTop()>1000){
+					$toTop.fadeIn(800);
+				}
+				else if ($(window).scrollTop()<1000){
+					$toTop.hide();
+				}
+			});
+			
+			$toTop.on('click', function(event) {
+				event.preventDefault();
+				body.animate({scrollTop:0}, 400);
+			});
+
+			});
+	</script>
+</body>
+</html>

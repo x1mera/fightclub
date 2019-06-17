@@ -1,0 +1,643 @@
+
+body{
+
+	box-sizing:border-box;
+	min-width:303px; 
+	margin:0px;
+	background:url(mma.jpg);
+	background-size:cover;
+	font-family:arial;
+	background-attachment:fixed;
+	}
+
+/* Стили Header */
+.spartan{
+	float:left; 
+	height:110px; 
+	width:110px;
+	}
+.spartan img {
+	width:100%
+	}
+header, .telooo, footer {
+	position:relative;
+	border-right:1px solid gray;
+	border-left:1px solid gray;
+	max-width:1280px; 
+	margin:auto; 
+	background-color:#100D12
+	}
+header {
+	margin-bottom:20px;
+	margin-top:0px;
+	}
+.emblem{
+	float:left;
+	text-shadow:1px -4px silver, 0px 0px 70px white;
+	margin: 0px 10px 10px 10px;
+	width:550px; 
+	height:80px;
+	font-family: 'Eater', cursive;
+	font-size:55px;
+	}
+.emblem span{
+	text-shadow:0px 0px 10px white;
+	font-size:30px;
+	color: lightgray;
+	}
+p.contakt { 
+	float:right;
+	margin-top:20px;
+	margin-right:20px;
+	color:white;
+	font-size:14px;
+	}
+.red{
+	color:red;
+	}
+header ul{
+	margin-top:5px;
+	box-sizing:border-box;
+	width:100%;
+	border:2px solid black;
+	border-radius:8px;
+	padding-left:0px;
+	background: linear-gradient(gray 0%,black 20%,black 50%, silver 100%)
+	}
+header li {
+	display:inline-block;
+	}
+li a{
+	display:inline-block;
+	text-decoration:none;
+	padding:8px 30px;
+	font-size:20px;
+	font-weight:600;
+	color:white;
+	border-right:2px solid gray;
+	}
+header li:first-of-type {
+	border-left:2px solid gray;
+	margin-left:8%;
+	}
+header a:hover{
+	color:red;
+	padding-bottom:5px;
+	border-bottom:3px solid red;
+	box-sizing:padding-box;
+	}
+header a:active{
+	padding-bottom:8px;
+	box-shadow: 0px 0px 4px 7px #000000 inset;
+	font-size:20px;
+	border-bottom:0px;
+	font-size:18px;
+	}
+a.active{
+	color:red;
+	padding-bottom:5px;
+	border-bottom:3px solid red;
+	box-sizing:padding-box;
+	}
+.clear{
+	clear:both;
+	}
+/* Конец стилей Header */
+
+
+/* */
+.telooo{
+	background: url(DPS-82.jpg);
+	max-width:1280px;
+	}
+.telooo .golova {
+	width:100%;
+	height:150px;
+	position:relative;
+	overflow:hidden;
+	border-top:3px solid gray;
+	}
+.telooo .golova img {
+	position: absolute;
+	top:-150px;
+	width:100%;
+	}
+.telooo .golova p {
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -100%);
+	position:absolute;
+	font-size:25px;
+	z-index:2;
+	color:red;
+	}
+fieldset {
+	width:90%;
+	margin:auto;
+	border:double 2px black;
+	}
+.gym {
+	text-align:center;
+	}
+.gym p, .trainers p, legend, .trening p {
+	font-size:25px;
+	text-shadow:2px 3px darkgray;
+	font-family: 'Comfortaa', cursive;
+	font-weight:bold;
+	}
+label[for] {
+	overflow: hidden;
+	cursor: pointer;
+	}
+input[type="checkbox"] {
+	overflow: hidden;
+	display: none;
+	}
+.wrapper {
+	border: groove 2px black;
+	position:relative;
+	margin: 0 auto;
+	overflow:hidden;
+	width: 90%;
+	background:rgba(0,0,0,0);
+	}
+.lightbox {
+	overflow:hidden;
+	position: absolute;
+	z-index: 1;
+	top: 5%;
+	left:-10%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	width: 120%;
+	height: 90%;
+	overflow: auto;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transition: transform .5s ease-out;
+	-webkit-transition: -webkit-transform .5s ease-out;
+	}
+.lightbox img {
+	overflow:hidden;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	width: 70%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	border:1px solid white;
+	box-shadow:0px 0px 15px 6px black;
+	}
+input[type="checkbox"]:checked + .lightbox {
+	overflow:hidden;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	}
+input[type="checkbox"]:checked ~ .frame {
+	opacity: .150;
+	overflow: hidden;
+	}
+.frame {
+	z-index: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 100%;
+	padding: 15px;
+	background-color:rgba(0,0,0,0) ;
+	text-align: center;
+	transition: opacity .20s;
+	-webkit-transition: opacity .20s;
+	}
+.item {
+	overflow: hidden;
+	display: inline-block;
+	width: 25%;
+	padding: 15px;
+	opacity: .70;
+	transition: opacity .2s;
+	-webkit-transition: opacity .2s;
+	}
+.item:hover {
+	overflow: hidden;
+	opacity: 1;
+	}
+.frame img {
+	overflow: hidden;
+	width: 80%;
+	height: 80%;
+	}
+.trainers{
+	text-align:center;
+	}
+.blok_tren_1, .blok_tren_2, .blok_tren_3, .blok_tren_4{
+	background-size:cover;
+	}
+.blok_tren_1{
+	background:url(images/tren1.jpg);
+	}
+.blok_tren_2{
+	background:url(images/tren2.jpg);
+	}
+.blok_tren_3{
+	background:url(images/tren3.jpg);
+	}
+.blok_tren_4{
+	background:url(images/tren4.jpg);
+	}
+.blok_tren {
+	position:relative;
+	box-shadow:
+	inset 0 0 0 16px rgba(255,255,255, 0.6);
+	transition:box-shadow 0.5s;
+	max-width: 280px;
+	max-height:280px;
+	background-size:cover;
+	display:inline-block;
+	width:20vw;
+	border-radius:50%;
+	height:20vw;
+	overflow:hidden;
+	}
+.blok_tren div{
+	margin:0px;
+	background:rgba(0,0,0,0.8);
+	position:absolute;
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	opacity:0;
+	transition-property:opacity,transform:scale;
+	transition-duration:0.5s;
+	transform:scale(0);
+	}
+.blok_tren p{
+	font-family:arial;
+	font-size:20px;
+	text-shadow:none;
+	width:90%;
+	text-align:center;
+	color:white;
+	position:absolute;
+	top:25%;
+	left:50%;
+	transform:translatex(-50%);
+	}
+.blok_tren p span{
+font-style:italic;
+border-top:1px solid white;
+font-size:14px;
+	}
+
+.blok_tren a {
+margin-top:10px;
+text-decoration:none;
+font-weight:bold;
+color:yellow;
+font-family:arial;
+	}
+	
+.blok_tren:hover{
+	box-shadow:inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.blok_tren:hover div {
+	opacity:1;
+	transform:scale(1);
+	}
+.trening {
+	text-align:center;
+	width:90%;
+	margin:auto;
+	padding-top:10px;
+	}
+.trening img {
+	max-width:300px;
+	width:40%;
+	padding:2px;
+	}
+.trening img{
+	-webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+	-moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+	-o-transform:scale(0.8); /*Opera: масштабирование*/
+	-ms-transform:scale(0.8);
+	transform:scale(0.8);
+	-webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+	-moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+	-o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+	-ms-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	opacity: 0.7; /*Начальная прозрачность изображений*/
+	margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+	border-radius:50%;
+	}
+
+.trening img:hover{
+	-webkit-transform:scale(1.3); 
+	-moz-transform:scale(1.3); 
+	-o-transform:scale(1.3); 
+	-ms-transform:scale(1.3); 
+	transform:scale(1.3); 
+	box-shadow:0px 0px 30px gray; 
+	-webkit-box-shadow:0px 0px 30px gray; 
+	-moz-box-shadow:0px 0px 30px gray; 
+	opacity: 1;
+	border-radius:10%;
+	}
+/* */
+.trainers div:hover span {
+	animation: skale  2s linear;
+	}
+@keyframes skale {
+	0%{transform:rotatex(90deg);transform-origin:top;}
+	100%{transform:none;}
+	}
+
+
+@keyframes skaleimg {
+	0%{}
+	100%{transform:rotatex(-90deg);transform-origin:bottom;;}
+	}
+
+	/* Стили Footer */
+footer {
+	background-color:black;
+	color:white;
+	font-size:10px;
+	}
+footer .copy {
+	margin:auto;
+	margin-top:30px;
+	max-width:90%;
+	height:80px; 
+	}
+footer .copy p {
+	padding-top:20px;
+	}
+/* Конец стилей Footer */
+
+.to-top {
+		z-index:3;
+		display: none;
+		padding: 10px;
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		border-radius: 15px;
+		background: white;
+		border: 1px darkgray solid;
+		color: #000;
+		text-decoration: none;
+		opacity: .5;
+		transition:opacity 1s;
+	}
+
+	.to-top:hover {
+		background: white;
+		opacity: 1;
+	}
+	
+@media (max-width: 1000px) {
+	.head_centr {
+		width:550px;
+		margin:auto;
+		}
+	.spartan img {
+		float:left;
+		}
+	header .emblem {
+		font-size:35px;
+		display: table-cell;
+		width:auto;
+		margin:auto;
+		}
+	header .contakt {
+		margin:0px;
+		float:none;
+		width:600px;
+		}
+	header .contakt .phone {
+		float:left;
+		}
+	header .contakt .no_phone {
+		float:left;
+		padding-left:10px;
+		}
+	header ul {
+		text-align:center;
+		}
+	header  li:first-of-type {
+		margin-left:0%;
+		}
+	header  nav ul li a {
+		font-size:16px;
+		}
+	header  nav ul li a:active {
+		font-size:16px;
+		}
+	.blok_tren p {
+		font-size:15.5px;
+		}
+		
+	.blok_tren span {
+		font-size:14px;
+		}
+	}
+
+@media (max-width: 800px) {
+	.head_centr {
+		width:550px;
+		margin:auto;
+		}
+	.spartan img {
+		float:left;
+		}
+	header .emblem {
+		font-size:35px;
+		display: table-cell;
+		width:auto;
+		margin:auto;
+		}
+	header .contakt {
+		margin:0px;
+		float:none; 
+		width:600px;
+		}
+	header .contakt .phone {
+		float:left;
+		}
+	header .contakt .no_phone {
+		float:left;
+		padding-left:10px;
+		}
+	header ul {
+		text-align:center;
+		}
+	header  li:first-of-type {
+		margin-left:0%;
+		}
+	header  nav ul li a {
+		font-size:14px;
+		padding:7px 15px;
+		}
+	header  nav ul li a:active {
+		font-size:14px;
+		}
+	br.adapt {
+		display:none;
+		}
+	.trainers .blok_tren {
+		width:36vw;
+		height:36vw;
+		}
+	.blok_tren p {
+		font-size:18px;
+		}
+	.blok_tren span {
+		font-size:14px;
+		}
+	.frame label {
+		width:35%;
+		}
+	}
+@media (max-width: 680px) {
+	.telooo .golova img {
+		position: absolute; 
+		top:0px;
+		width:100%;
+		}
+	}
+@media (max-width: 580px) {
+	.spartan{
+		height:19vw;
+		width:19vw;
+		}
+	.contakt {
+		display:none;
+		}
+	header .head_centr {
+		width:auto;
+		}
+	header .emblem {
+		font-size:6vw;
+		display: table-cell;
+		height:auto;
+		}
+	header .emblem span{
+		font-size:5vw;
+		}
+	header nav ul li a {
+		font-size: 2.5vw;
+		padding: 7px 10px;
+		}
+	header nav ul li a:active {
+		font-size: 2.5vw;
+		}
+	.blok_tren p {
+		font-size:16px;
+		}
+	.blok_tren span {
+		font-size:13px;
+		}
+	}
+
+@media (max-width: 480px) {
+	header ul{
+		margin-top:5px; 
+		box-sizing:border-box;
+		width:100%;
+		border:2px solid black;
+		border-radius:8px;
+		padding-left:0px;
+		background:#100D12;
+		}
+	header li {
+		display:block;
+		}
+	header nav ul li a{
+		display:inline-block;
+		text-decoration:none;
+		padding:0px;
+		font-size:3.5vw;
+		font-weight:200;
+		color:white;
+		border-right:none;
+		width:100%;
+		}
+	header li:first-of-type {
+		border-left:none;
+		margin-left:0%;
+		}
+	header a:hover{
+		color:red;
+		padding-bottom:1px;
+		border-bottom:0px solid red;
+		}
+	header nav ul li a:active{
+		padding-bottom:2px;
+		box-shadow: 0px 0px 2px 3px #000000 inset;
+		font-size:3.5vw;
+		border-bottom:0px;
+		}
+	a.active{
+		color:red;
+		padding-bottom:1px;
+		border-bottom:0px solid red;
+		}
+	.trainers .blok_tren {
+		width:55vw;
+		height:55vw; 
+		min-width:180px;
+		min-height:180px;
+		}
+	.trening img:hover{
+	-webkit-transform:scale(1.4); 
+	-moz-transform:scale(1.4); 
+	-o-transform:scale(1.4); 
+	-ms-transform:scale(1.4); 
+	transform:scale(1.4); }
+	}
+
+@media (max-width: 380px) {
+	.trening img{
+	-webkit-transform:scale(0.9);
+	-moz-transform:scale(0.9); 
+	-o-transform:scale(0.9); 
+	-ms-transform:scale(0.9);
+	transform:scale(0.9);
+	}
+	.trening img:hover{
+	-webkit-transform:scale(1.5); 
+	-moz-transform:scale(1.5); 
+	-o-transform:scale(1.5); 
+	-ms-transform:scale(1.5); 
+	transform:scale(1.5); }
+	}
+
+
+@media (max-width: 320px){
+	header nav ul li a{
+		font-size:14px;
+		}
+	header nav ul li a:active{
+		font-size:14px;
+		}
+	body{
+		min-width:303px;
+		-webkit-box-sizing:border-box;
+		}
+	header,.telooo, footer {
+		box-sizing:border-box;
+		}
+	header .emblem {
+		font-size:15px;
+		}
+	header .emblem span{
+		font-size:14px;
+		}
+	.spartan{
+		height:60px;
+		width:60px;
+		}
+	}
